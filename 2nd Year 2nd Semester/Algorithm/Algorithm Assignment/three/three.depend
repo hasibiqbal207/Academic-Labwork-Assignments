@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1480688444 source:c:\users\hasib iqbal pranto\desktop\algorithm assignment\three\main.cpp
+	<iostream>
+	<vector>
+	<cstring>
+	<string>
+

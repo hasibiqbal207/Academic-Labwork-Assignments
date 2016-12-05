@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1480677832 source:c:\users\hasib iqbal pranto\desktop\algorithm assignment\two\main.cpp
+	<iostream>
+	<cstring>
+	<vector>
+	<fstream>
+	<cmath>
+
