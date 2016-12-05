@@ -1,0 +1,42 @@
+CODE SEGMENT
+	ASSUME CS:CODE
+	ORG 1000H	
+MOV AL,80H
+OUT 1EH,AL  
+
+MOV AL,0FFH
+OUT 1AH,AL
+
+MOV AH,00000001B 
+MOV BX,0000H
+
+START:
+    MOV SI,OFFSET INPUT
+    MOV CX,LEN
+    
+    MAT: 
+        MOV AL,AH
+        OUT 1CH,AL
+        
+        MOV AL,[SI]
+        OUT 18H,AL 
+        
+        ROL AH,01H
+        INC SI 
+        
+        MOV DX,00FFH
+        DELAY:
+        DEC DX
+        CMP DX,BX 
+        JNE DELAY
+        
+    LOOP MAT  
+       
+    JMP START     
+   
+INPUT DB 00000000B,10111111B,11011111B,11101111B,11101111B,11011111B,10111111B,00000000B
+LEN EQU ($-INPUT) 
+ 
+
+CODE ENDS
+END	

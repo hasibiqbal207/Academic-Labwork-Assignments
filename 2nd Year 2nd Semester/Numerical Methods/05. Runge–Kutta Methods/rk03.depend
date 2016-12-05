@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1478745387 source:c:\users\softeng\desktop\rk03\main.cpp
+	<iostream>
+	<cstdio>
+	<cmath>
+

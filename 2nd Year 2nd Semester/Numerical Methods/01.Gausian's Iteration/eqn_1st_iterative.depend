@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1475675525 source:c:\users\pranto\google drive\education\lab work\cse 2-2\numerical method\eqn_1st_iterative\main.cpp
+	<iostream>
+	<fstream>
+	<bits/stdc++.h>
+

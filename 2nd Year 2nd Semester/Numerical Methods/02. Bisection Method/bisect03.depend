@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1475726957 source:c:\users\softeng\desktop\bisect03\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+
+1475863486 source:e:\bisect03\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+
