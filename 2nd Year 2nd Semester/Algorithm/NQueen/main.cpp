@@ -8,7 +8,7 @@ bool place(int x[],int y[],int k,int i)
 {
     for(int j=1;j<=k-1;j++)
     {
-        if((x[j] == i)||(abs(x[j]-i)==abs(j-k)) || (y[j+1]==i && ) || y[j+1]==i)
+        if((x[j] == i)||(abs(x[j]-i)==abs(j-k)) || (y[j+1]==i && ) || (y[j+1]==i))
         {
             return false;
         }
@@ -60,6 +60,5 @@ int main()
     int y[n+1];
     for(int i=1;i<=n;i++)
         x[i]=0,y[i]=0;
-
     nQueen(x,y,1,n);
 }

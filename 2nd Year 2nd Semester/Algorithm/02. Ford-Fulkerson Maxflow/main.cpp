@@ -31,7 +31,6 @@ bool bfs(int **residual,int n,int s, int t, int parent[])
             }
         }
     }
-
     return (visited[t] == true);
 }
 

@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1480696168 source:d:\git\academic-labwork-assignments\2nd year 2nd semester\algorithm\ford-fulkerson maxflow\main.cpp
+	<iostream>
+	<limits.h>
+	<string.h>
+	<queue>
+	<fstream>
+
+1482488241 source:d:\git\academic-labwork-assignments\2nd year 2nd semester\algorithm\02. ford-fulkerson maxflow\main.cpp
+	<iostream>
+	<limits.h>
+	<string.h>
+	<queue>
+	<fstream>
+
