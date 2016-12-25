@@ -2,13 +2,13 @@
 #include <cmath>
 
 using namespace std;
-//int count=0
 
-bool place(int x[],int y[],int k,int i)
+int count = 0;
+bool place(int x[],int k,int i)
 {
     for(int j=1;j<=k-1;j++)
     {
-        if((x[j] == i)||(abs(x[j]-i)==abs(j-k)) || (y[j+1]==i && ) || (y[j+1]==i))
+        if((x[j] == i)||(abs(x[j]-i)==abs(j-k)))
         {
             return false;
         }
@@ -16,17 +16,16 @@ bool place(int x[],int y[],int k,int i)
     return true;
 }
 
-void nQueen(int x[],int y[],int k,int n)
+void nQueen(int x[],int k,int n)
 {
     for(int i=1;i<=n;i++)
     {
-        if(place(x,y,k,i))
+        if(place(x,k,i))
         {
             x[k]=i;
-            y[k+1]=k+2;
-            y[k+2]=k+1;
             if(k==n)
             {
+                count++;
                 cout<<"Position's :"<<endl;
                 for(int i=1;i<=n;i++)
                 {
@@ -44,10 +43,11 @@ void nQueen(int x[],int y[],int k,int n)
             }
             else
             {
-                nQueen(x,y,k+1,n);
+                nQueen(x,k+1,n);
             }
         }
     }
+
 }
 
 int n;
@@ -55,10 +55,9 @@ int main()
 {
     cout<<"Enter Number of Queen : ";
     cin>>n;
-
     int x[n+1];
-    int y[n+1];
     for(int i=1;i<=n;i++)
-        x[i]=0,y[i]=0;
-    nQueen(x,y,1,n);
+        x[i]=0;
+    nQueen(x,1,n);
+    cout<<"Possible Solution : "<<count;
 }
